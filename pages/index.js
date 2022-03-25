@@ -1,4 +1,9 @@
 import Hero from "../components/Hero";
+import TransformSection from "../components/TransformSection";
+import StandOutSection from "../components/StandOutSection";
+import GraphicSection from "../components/GraphicSection";
+import Testimonials from "../components/Testimonials";
+import Gallery from "../components/Gallery";
 import Head from "next/head";
 
 export default function Home() {
@@ -12,6 +17,11 @@ export default function Home() {
 
       <main className="">
         <Hero />
+        <TransformSection />
+        <StandOutSection />
+        <GraphicSection />
+        <Testimonials />
+        <Gallery />
       </main>
     </div>
   );
