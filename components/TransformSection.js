@@ -11,7 +11,7 @@ const TransformSection = () => {
           of the marketing for you.
         </p>
         <a
-          className="font-fraunces font-black xl:text-lg 2xl:text-xl block mt-10"
+          className="font-fraunces font-black relative z-10 xl:text-lg 2xl:text-xl block mt-10 after:content-[''] after:bg-yellow after:h-3 after:w-40 after:absolute after:inset-0 after:top-4 after:z-[-1] after:rounded after:translate-x-[-6px] after:opacity-50 hover:after:opacity-100"
           href="#"
         >
           LEARN MORE

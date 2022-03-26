@@ -4,6 +4,7 @@ import StandOutSection from "../components/StandOutSection";
 import GraphicSection from "../components/GraphicSection";
 import Testimonials from "../components/Testimonials";
 import Gallery from "../components/Gallery";
+import Footer from "../components/Footer";
 import Head from "next/head";
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
         <GraphicSection />
         <Testimonials />
         <Gallery />
+        <Footer />
       </main>
     </div>
   );

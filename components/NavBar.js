@@ -15,7 +15,7 @@ const NavBar = () => {
           Projects
         </a>
         <button
-          className="rounded-3xl bg-white font-fraunces px-5 py-3"
+          className="rounded-3xl bg-white font-fraunces px-5 py-3 hover:text-white hover:bg-[#6fcfff]"
           type="button"
         >
           CONTACT
