@@ -1,6 +1,6 @@
 const Client = ({ profilePic, testimonial, name, position }) => {
   return (
-    <div className="flex flex-col items-center max-w-sm">
+    <div className="flex flex-col items-center max-w-xs xl:max-w-sm">
       <img className="rounded-full h-16" src={profilePic} alt="Emily R." />
       <p className="text-center font-barlow text-veryDarkGrayBlue text-lg my-14">
         {testimonial}
