@@ -32,7 +32,7 @@ const Testimonials = () => {
       <h1 className="font-fraunces text-grayishBlue text-center tracking-widest text-2xl mb-14">
         CLIENT TESTIMONIALS
       </h1>
-      <div className="flex justify-center space-x-8">
+      <div className="flex flex-col lg:flex-row justify-center space-x-8">
         {Clients.map((client, index) => (
           <Client key={index} {...client} />
         ))}

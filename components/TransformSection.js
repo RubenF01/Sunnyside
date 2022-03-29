@@ -1,6 +1,6 @@
 const TransformSection = () => {
   return (
-    <div className="flex justify-center">
+    <div className="flex flex-col lg:flex-row justify-center">
       <div className="w-1/2">
         <div className="mx-auto lg:max-w-xs xl:max-w-3xl 2xl:max-w-2xl lg:mt-16 2xl:mt-48">
           <h1 className="font-fraunces text-veryDarkDesBlue font-black mb-10 lg:text-3xl xl:text-4xl 2xl:text-5xl 2xl:max-w-md">
@@ -20,7 +20,7 @@ const TransformSection = () => {
         </div>
       </div>
 
-      <div className="w-1/2">
+      <div className="w-1/2 order-first lg:order-last">
         <img
           className="w-full h-full"
           src="/desktop/image-transform.jpg"

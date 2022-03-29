@@ -20,7 +20,7 @@ const Images = [
 
 const Gallery = () => {
   return (
-    <div className="flex">
+    <div className="flex basis-2/4">
       {Images.map((image, index) => (
         <GalleryImage key={index} {...image} />
       ))}
