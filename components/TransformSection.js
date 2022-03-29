@@ -1,18 +1,21 @@
+import { useMedia } from "react-use";
+
 const TransformSection = () => {
+  const isWide = useMedia("(min-width: 640px)", true);
   return (
-    <div className="flex flex-col lg:flex-row justify-center">
-      <div className="w-1/2">
-        <div className="mx-auto lg:max-w-xs xl:max-w-3xl 2xl:max-w-2xl lg:mt-16 2xl:mt-48">
-          <h1 className="font-fraunces text-veryDarkDesBlue font-black mb-10 lg:text-3xl xl:text-4xl 2xl:text-5xl 2xl:max-w-md">
+    <div className="flex flex-col md:flex-row justify-center">
+      <div className="w-full md:w-1/2">
+        <div className="mx-auto px-8 md:px-0 md:max-w-xs xl:max-w-md 2xl:max-w-2xl mt-16 xl:mt-36 mb-16 lg:mb-0 2xl:mt-48 flex flex-col items-center md:items-start">
+          <h1 className="font-fraunces text-veryDarkDesBlue font-black mb-10 text-3xl xl:text-4xl 2xl:text-5xl max-w-xs 2xl:max-w-md text-center md:text-left">
             Transform your brand
           </h1>
-          <p className="text-darkGrayBlue font-barlow xl:text-lg 2xl:text-2xl">
+          <p className="text-darkGrayBlue font-barlow xl:text-lg 2xl:text-2xl text-center md:text-left">
             We are a full-service creative agency specializing in helping brands
             grow fast. Engage your clients through compelling visuals that do
             most of the marketing for you.
           </p>
           <a
-            className="font-fraunces font-black relative w-max z-10 xl:text-lg 2xl:text-xl block mt-10 after:content-[''] after:bg-yellow after:h-3 lg:after:w-32 xl:after:w-36 2xl:after:w-40 after:absolute after:inset-0 lg:after:top-3 xl:after:top-4 after:z-[-1] after:rounded lg:after:translate-x-[-4px] xl:after:translate-x-[-6px] after:opacity-50 hover:after:opacity-100"
+            className="font-fraunces font-black relative text-veryDarkDesBlue w-max z-10 xl:text-lg 2xl:text-xl block mt-10 after:content-[''] after:bg-yellow after:h-3 after:w-32 lg:after:w-32 xl:after:w-36 2xl:after:w-40 after:absolute after:inset-0 after:top-3 xl:after:top-4 after:z-[-1] after:rounded after:translate-x-[-5px] lg:after:translate-x-[-4px] xl:after:translate-x-[-6px] after:opacity-50 hover:after:opacity-100"
             href="#"
           >
             LEARN MORE
@@ -20,10 +23,14 @@ const TransformSection = () => {
         </div>
       </div>
 
-      <div className="w-1/2 order-first lg:order-last">
+      <div className="w-full md:w-1/2 order-first md:order-last">
         <img
           className="w-full h-full"
-          src="/desktop/image-transform.jpg"
+          src={`${
+            isWide
+              ? "/desktop/image-transform.jpg"
+              : "/mobile/image-transform.jpg"
+          }`}
           alt="transform"
         />
       </div>

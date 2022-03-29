@@ -28,11 +28,11 @@ const Clients = [
 
 const Testimonials = () => {
   return (
-    <div className="py-28">
-      <h1 className="font-fraunces text-grayishBlue text-center tracking-widest text-2xl mb-14">
+    <div className="py-16 md:py-28">
+      <h1 className="font-fraunces text-grayishBlue text-center tracking-widest text-xl md:text-2xl mb-14">
         CLIENT TESTIMONIALS
       </h1>
-      <div className="flex flex-col lg:flex-row justify-center space-x-8">
+      <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start space-y-10 lg:space-x-8 lg:space-y-0">
         {Clients.map((client, index) => (
           <Client key={index} {...client} />
         ))}
